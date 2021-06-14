@@ -3,7 +3,7 @@
 
 #### Development environment: .NET Framework 4.6.1
 
-[Donwload](https://github.com/Ryter-code/CheckSum-Tool/raw/master/CheckSum_Tool/bin/Debug/CheckSum_Tool.exe)
+Donwload: [v1.0.0](https://github.com/Ryter-code/CheckSum-Tool/releases/tag/v1.0.0)
 
 ![image](https://github.com/Ryter-code/CheckSum-Tool/blob/master/media/Screenshots.PNG)
 
