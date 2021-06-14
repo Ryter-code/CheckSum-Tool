@@ -1,0 +1,9 @@
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Release\CheckSum_Tool.exe.config
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Release\CheckSum_Tool.exe
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Release\CheckSum_Tool.pdb
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.Form1.resources
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.Properties.Resources.resources
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.csproj.GenerateResource.cache
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.csproj.CoreCompileInputs.cache
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.exe
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Release\CheckSum_Tool.pdb

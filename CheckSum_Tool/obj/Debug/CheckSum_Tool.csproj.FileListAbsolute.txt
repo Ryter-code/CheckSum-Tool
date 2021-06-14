@@ -8,3 +8,13 @@ D:\Code\c_sharp\CheckSum Tool\CheckSum_Tool\obj\Debug\CheckSum_Tool.csproj.Gener
 D:\Code\c_sharp\CheckSum Tool\CheckSum_Tool\obj\Debug\CheckSum_Tool.csproj.CoreCompileInputs.cache
 D:\Code\c_sharp\CheckSum Tool\CheckSum_Tool\obj\Debug\CheckSum_Tool.exe
 D:\Code\c_sharp\CheckSum Tool\CheckSum_Tool\obj\Debug\CheckSum_Tool.pdb
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Debug\CheckSum_Tool.exe.config
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Debug\CheckSum_Tool.exe
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\bin\Debug\CheckSum_Tool.pdb
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.csprojAssemblyReference.cache
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.Form1.resources
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.Properties.Resources.resources
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.csproj.GenerateResource.cache
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.csproj.CoreCompileInputs.cache
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.exe
+D:\Code\c_sharp\CheckSum Tool2\CheckSum_Tool\obj\Debug\CheckSum_Tool.pdb

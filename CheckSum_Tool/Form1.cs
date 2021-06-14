@@ -19,6 +19,8 @@ namespace CheckSum_Tool
         public Form1()
         {
             InitializeComponent();
+            textBox1.Text = "Click open button or drag and drop files to here...\r\n";
+            textBox1.ScrollBars = ScrollBars.Vertical;
         }
 
         private void textBox1_DragEnter(object sender, DragEventArgs e)
@@ -39,7 +41,7 @@ namespace CheckSum_Tool
              * So we always use object path[0] only.
              */
             string[] entriesPath = (string[])e.Data.GetData(DataFormats.FileDrop, false);
-            this.textBox1.Text = "Drag and drop files to here...\r\nGet File: " + entriesPath[0];
+            textBox1_log("Selected File: " + entriesPath[0] + "\r\n");
             file_path = entriesPath[0];
         }
 
@@ -60,7 +62,6 @@ namespace CheckSum_Tool
             {
                 MessageBox.Show("Unknown error:\n" + e2.ToString(), "Warning");
             }
-
         }
 
         // exit button
@@ -76,12 +77,35 @@ namespace CheckSum_Tool
             try
             {
                 System.Windows.Forms.Clipboard.SetText(this.textBox2.Text);
+                textBox1_log("Copy checksum " + this.textBox2.Text +  " successfully!" + "\r\n");
             }
             catch(System.ArgumentNullException e1)
             {
                 return;
             }
             return;
+        }
+
+        // open file button
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var fileContent = string.Empty;
+            var filePath = string.Empty;
+
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "bin files (*.bin)|*.bin|rom files (*.rom)|*.rom|All files (*.*)|*.*";
+                openFileDialog.FilterIndex = 1;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path of specified file
+                    file_path = openFileDialog.FileName;
+                    textBox1_log("Selected File: " + file_path + "\r\n");
+                }
+            }
         }
 
         // Get Checksum
@@ -103,8 +127,8 @@ namespace CheckSum_Tool
         {
 
             /**
-             *    x = Windows Width - App Width
-             *    y = Windows Height - App Height
+             *    x = Windows Width - ( App Width + 10 )
+             *    y = Windows Height - ( App Height + 30 )
              *     -------------------------------------
              *     |                                           |
              *     |                                           |
@@ -114,13 +138,21 @@ namespace CheckSum_Tool
              *     -------------------------------------
              */
 
-            int x = (System.Windows.Forms.SystemInformation.WorkingArea.Width - this.Size.Width);
-            int y = (System.Windows.Forms.SystemInformation.WorkingArea.Height - this.Size.Height);
+            int x = (System.Windows.Forms.SystemInformation.WorkingArea.Width - (this.Size.Width + 10));
+            int y = (System.Windows.Forms.SystemInformation.WorkingArea.Height - (this.Size.Height + 30));
 
             // Setup windows form position is control by Location
             this.StartPosition = FormStartPosition.Manual;
             // Setup windows form position to (x,y)
             this.Location = (Point)new Size(x, y);
+        }
+
+        private void textBox1_log(String str)
+        {
+            this.textBox1.Text += str;
+            textBox1.ScrollBars = ScrollBars.Vertical;
+            textBox1.SelectionStart = textBox1.Text.Length;
+            textBox1.ScrollToCaret();
         }
     }
 }
