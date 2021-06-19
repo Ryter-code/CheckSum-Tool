@@ -112,8 +112,8 @@ namespace CheckSum_Tool
         private int get_checksum(String file)
         {
             int checksum = 0;
-            string read_text = File.ReadAllText(file);
-            byte[] ASCIIbytes = Encoding.ASCII.GetBytes(read_text);
+
+            byte[] ASCIIbytes = File.ReadAllBytes(file);
 
             for (int i = 0; i < ASCIIbytes.Length; i++)
             {
