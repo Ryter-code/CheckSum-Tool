@@ -126,7 +126,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "CheckSum Tool v1.0";
+            this.Text = "CheckSum Tool v1.0 (https://github.com/Ryter-code/CheckSum-Tool)";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

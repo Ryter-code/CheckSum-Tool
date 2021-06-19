@@ -19,7 +19,7 @@ namespace CheckSum_Tool
         public Form1()
         {
             InitializeComponent();
-            textBox1.Text = "Click open button or drag and drop files to here...\r\n";
+            textBox1.Text = "Click open file button or drag a file to here...\r\n";
             textBox1.ScrollBars = ScrollBars.Vertical;
         }
 
@@ -56,7 +56,7 @@ namespace CheckSum_Tool
             }
             catch (System.IO.FileNotFoundException e1)
             {
-                MessageBox.Show("System.IO.FileNotFoundException:\nFile Not Found.", "Warning");
+                MessageBox.Show("File Not Found QAQ...", "Warning");
             }
             catch (Exception e2)
             {
